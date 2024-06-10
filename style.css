@@ -18,7 +18,6 @@ body {
 .container {
   width: 400px;
   height: min-content;
-
   border-radius: 12px;
   padding: 28px;
   background-color: #4158d0;
@@ -94,11 +93,12 @@ body {
   position: relative;
 }
 
-/* .weather-box .temperature sup{
-    font-size: 20px;
-    position: absolute;
-    font-weight: 500;
-} */
+.weather-box .temperature sup {
+  position: absolute;
+  margin-left: 0px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 
 .weather-box .description {
   font-size: 1.4rem;
