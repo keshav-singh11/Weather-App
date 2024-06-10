@@ -1,4 +1,5 @@
 const inputBox = document.querySelector('.input-box');
+const container = document.querySelector('.container');
 const searchBtn = document.getElementById('searchBtn');
 const weather_img = document.querySelector('.weather-img');
 const temperature = document.querySelector('.temperature');
@@ -6,6 +7,7 @@ const description = document.querySelector('.description');
 const humidity = document.getElementById('humidity');
 const wind_speed = document.getElementById('wind-speed');
 const place= document.querySelector('.name');
+
 
 const location_not_found = document.querySelector('.location-not-found');
 
@@ -41,8 +43,8 @@ async function checkWeather(city){
     switch(weather_data.weather[0].main){
         case 'Haze':
             weather_img.src = "assets/haze.png";
-            // description.style.color="#99919c";
             description.style.color="lightblue";
+           
             break;
         case 'Clouds':
             weather_img.src = "assets/cloud.png";
