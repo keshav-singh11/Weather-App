@@ -29,7 +29,7 @@ async function checkWeather(city){
     console.log("run");
     location_not_found.style.display = "none";
     weather_body.style.display = "flex";
-    temperature.innerHTML = `${Math.round(weather_data.main.temperature - 273.15)}°C`;
+    temperature.innerHTML = `${Math.round(weather_data.main.temp - 273.15)}°C`;
     description.innerHTML = `${weather_data.weather[0].description}`;
 
     humidity.innerHTML = `${weather_data.main.humidity}%`;
